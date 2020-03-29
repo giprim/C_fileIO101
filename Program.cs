@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading.Tasks;
 
 namespace C_fileIO101
 {
@@ -6,7 +7,7 @@ namespace C_fileIO101
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            new DisplayOptions().displayOptions();
         }
     }
 }

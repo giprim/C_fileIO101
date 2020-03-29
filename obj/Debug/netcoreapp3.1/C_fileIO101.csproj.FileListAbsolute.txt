@@ -1,0 +1,13 @@
+/home/gi/DotNet/C_fileIO101/bin/Debug/netcoreapp3.1/C_fileIO101
+/home/gi/DotNet/C_fileIO101/bin/Debug/netcoreapp3.1/C_fileIO101.deps.json
+/home/gi/DotNet/C_fileIO101/bin/Debug/netcoreapp3.1/C_fileIO101.runtimeconfig.json
+/home/gi/DotNet/C_fileIO101/bin/Debug/netcoreapp3.1/C_fileIO101.runtimeconfig.dev.json
+/home/gi/DotNet/C_fileIO101/bin/Debug/netcoreapp3.1/C_fileIO101.dll
+/home/gi/DotNet/C_fileIO101/bin/Debug/netcoreapp3.1/C_fileIO101.pdb
+/home/gi/DotNet/C_fileIO101/obj/Debug/netcoreapp3.1/C_fileIO101.csprojAssemblyReference.cache
+/home/gi/DotNet/C_fileIO101/obj/Debug/netcoreapp3.1/C_fileIO101.csproj.CoreCompileInputs.cache
+/home/gi/DotNet/C_fileIO101/obj/Debug/netcoreapp3.1/C_fileIO101.AssemblyInfoInputs.cache
+/home/gi/DotNet/C_fileIO101/obj/Debug/netcoreapp3.1/C_fileIO101.AssemblyInfo.cs
+/home/gi/DotNet/C_fileIO101/obj/Debug/netcoreapp3.1/C_fileIO101.dll
+/home/gi/DotNet/C_fileIO101/obj/Debug/netcoreapp3.1/C_fileIO101.pdb
+/home/gi/DotNet/C_fileIO101/obj/Debug/netcoreapp3.1/C_fileIO101.genruntimeconfig.cache
