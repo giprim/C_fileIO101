@@ -6,31 +6,16 @@ namespace C_fileIO101.Files.OSFileSystem
 {
     public class LinuxOS
     {
-        // file path == /home/$var/$FolderName
+        // file path == /home/$var/ConsoleFolder/$FolderName
 
         public void linux(string foldername)
         {
-            try
-            {
-                string root = Directory.GetDirectoryRoot("/");
-                string[] rootDir = Directory.GetDirectories(root);
-
-                foreach (string dir in rootDir)
-                {
-                    if (dir.Equals("/home"))
-                    {
-                        string homePath = Directory.GetDirectories(dir)[0] + $"/{foldername}";
-                        CreateFolder createFolder = new CreateFolder();
-                        string createdPath = createFolder.createFolder(homePath);
-                        Console.WriteLine(createdPath);
-                    }
-                }
-            }
-            catch (System.Exception)
-            {
-
-                throw;
-            }
+            CreateFolder createFolder = new CreateFolder();
+            RootFolder rootFolder = new RootFolder();
+            string rootPath = rootFolder.rootFolder();
+            string path = rootPath + $"/{foldername}";
+            string createdPath = createFolder.createFolder(path);
+            Console.WriteLine(createdPath);
         }
     }
 }

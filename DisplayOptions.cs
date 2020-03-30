@@ -11,6 +11,9 @@ class DisplayOptions
             Console.WriteLine($"Enter {(int)Options.READ} to Read file");
             Console.WriteLine($"Enter {(int)Options.WRITE} to Write to a file");
             Console.WriteLine($"Enter {(int)Options.DELETE} to Delete file");
+            Console.WriteLine("====================");
+            Console.WriteLine("====================");
+            Console.WriteLine($"Enter {(int)Options.LIST} to Delete file");
             int inputOption = Convert.ToInt32(Console.ReadLine());
             OptionHandler optionH = new OptionHandler();
             optionH.Handler(inputOption);

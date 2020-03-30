@@ -23,6 +23,11 @@ class OptionHandler
                 new WhichOS().RootFolder();
                 break;
 
+            case (int)Options.LIST:
+                Console.WriteLine("List Files");
+                new ListFolderContent().listFolders();
+                break;
+
             default:
                 new DisplayOptions().displayOptions();
                 break;
