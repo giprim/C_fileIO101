@@ -6,10 +6,9 @@ namespace C_fileIO101.Files
 {
     public class ListFolderContent
     {
+        public ArrayList directoryList = new ArrayList();
         public void listFolders(string aPath = "")
         {
-            ArrayList directoryList = new ArrayList();
-
             string rootPath = new RootFolder().rootFolder();
             string[] folders = Directory.GetDirectories(rootPath + aPath);
             string[] files = Directory.GetFiles(rootPath);
@@ -18,7 +17,6 @@ namespace C_fileIO101.Files
             for (int i = 0; i < folders.Length; i++)
             {
                 directoryList.Add(folders[i]);
-
                 int folderPathName = folders[i].LastIndexOf('/');
                 var folderName = folders[i].Substring(folderPathName + 1);
             }
