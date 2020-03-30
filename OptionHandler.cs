@@ -9,17 +9,17 @@ class OptionHandler
         switch (option)
         {
             case (int)Options.READ:
-                Console.WriteLine($"you want to {Options.READ} a file");
+                Console.WriteLine($"{Options.READ} a file");
                 break;
 
             case (int)Options.WRITE:
-                Console.WriteLine($"you want to {Options.WRITE} to a file");
+                Console.WriteLine($"{Options.WRITE} to a file");
                 break;
             case (int)Options.DELETE:
-                Console.WriteLine($"you want to {Options.DELETE} a file");
+                Console.WriteLine($"{Options.DELETE} a file");
                 break;
             case (int)Options.CREATEFOLDER:
-                Console.WriteLine($"you want to {Options.CREATEFOLDER} a file");
+                Console.WriteLine($"Create a folder");
                 new WhichOS().RootFolder();
                 break;
 

@@ -1,7 +1,7 @@
 enum Options
 {
-    READ = 1,
+    CREATEFOLDER = 1,
+    READ,
     WRITE,
     DELETE,
-    CREATEFOLDER
 }

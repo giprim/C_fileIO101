@@ -9,7 +9,6 @@ namespace C_fileIO101
         static void Main(string[] args)
         {
             new DisplayOptions().displayOptions();
-
         }
     }
 }

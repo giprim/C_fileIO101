@@ -5,17 +5,29 @@ namespace C_fileIO101.Files
 {
     public class CreateFolder
     {
-        public void createFolder(string path)
+        public string createFolder(string path)
         {
+            string pathReady = "";
+
             try
             {
-                Console.WriteLine(path);
-                // Directory.CreateDirectory(path);
+                if (!Directory.Exists(path))
+                {
+                    Directory.CreateDirectory(path);
+                }
+                else
+                {
+                    Console.WriteLine("Folder already exist");
+                }
+
+                pathReady = path;
             }
             catch (System.Exception e)
             {
                 throw e;
             }
+
+            return pathReady;
         }
     }
 }

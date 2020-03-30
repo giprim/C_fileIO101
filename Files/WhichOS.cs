@@ -28,8 +28,6 @@ namespace C_fileIO101.Files
                 new LinuxOS().linux(foldername);
             }
 
-            Console.WriteLine(Environment.OSVersion);
-
         }
     }
 

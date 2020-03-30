@@ -21,7 +21,8 @@ namespace C_fileIO101.Files.OSFileSystem
                     {
                         string homePath = Directory.GetDirectories(dir)[0] + $"/{foldername}";
                         CreateFolder createFolder = new CreateFolder();
-                        createFolder.createFolder(homePath);
+                        string createdPath = createFolder.createFolder(homePath);
+                        Console.WriteLine(createdPath);
                     }
                 }
             }

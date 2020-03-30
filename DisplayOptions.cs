@@ -7,10 +7,10 @@ class DisplayOptions
         {
             Console.WriteLine("Please choose the action you want to perform");
             Console.WriteLine();
-            Console.WriteLine("Enter 1 to Read file");
-            Console.WriteLine("Enter 2 to Write to a file");
-            Console.WriteLine("Enter 3 to Delete file");
-            Console.WriteLine("Enter 4 to Create a folder");
+            Console.WriteLine($"Enter {(int)Options.CREATEFOLDER} to Create a folder");
+            Console.WriteLine($"Enter {(int)Options.READ} to Read file");
+            Console.WriteLine($"Enter {(int)Options.WRITE} to Write to a file");
+            Console.WriteLine($"Enter {(int)Options.DELETE} to Delete file");
             int inputOption = Convert.ToInt32(Console.ReadLine());
             OptionHandler optionH = new OptionHandler();
             optionH.Handler(inputOption);
