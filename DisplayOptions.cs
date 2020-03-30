@@ -13,7 +13,7 @@ class DisplayOptions
             Console.WriteLine($"Enter {(int)Options.DELETE} to Delete file");
             Console.WriteLine("====================");
             Console.WriteLine("====================");
-            Console.WriteLine($"Enter {(int)Options.LIST} to Delete file");
+            Console.WriteLine($"Enter {(int)Options.LIST} to List file");
             int inputOption = Convert.ToInt32(Console.ReadLine());
             OptionHandler optionH = new OptionHandler();
             optionH.Handler(inputOption);

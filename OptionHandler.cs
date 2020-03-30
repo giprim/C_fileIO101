@@ -15,9 +15,11 @@ class OptionHandler
             case (int)Options.WRITE:
                 Console.WriteLine($"{Options.WRITE} to a file");
                 break;
+
             case (int)Options.DELETE:
                 Console.WriteLine($"{Options.DELETE} a file");
                 break;
+
             case (int)Options.CREATEFOLDER:
                 Console.WriteLine($"Create a folder");
                 new WhichOS().RootFolder();
