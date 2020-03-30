@@ -25,6 +25,10 @@ class OptionHandler
                 new WhichOS().RootFolder();
                 break;
 
+            case (int)Options.CREATEFILE:
+                Console.WriteLine($"Create a file");
+                break;
+
             case (int)Options.LIST:
                 Console.WriteLine("List Files");
                 new ListFolderContent().listFolders();

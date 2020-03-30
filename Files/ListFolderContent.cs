@@ -38,7 +38,6 @@ namespace C_fileIO101.Files
                     {
                         theType = "file";
                     }
-
                     int pathName = directoryList[i].ToString().LastIndexOf('/');
                     var name = directoryList[i].ToString().Substring(pathName + 1);
                     Console.WriteLine($"{i} <{theType}> == {name}");
