@@ -10,6 +10,7 @@ class DisplayOptions
             Console.WriteLine("Enter 1 to Read file");
             Console.WriteLine("Enter 2 to Write to a file");
             Console.WriteLine("Enter 3 to Delete file");
+            Console.WriteLine("Enter 4 to Create a folder");
             int inputOption = Convert.ToInt32(Console.ReadLine());
             OptionHandler optionH = new OptionHandler();
             optionH.Handler(inputOption);

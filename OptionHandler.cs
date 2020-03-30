@@ -1,4 +1,6 @@
 using System;
+using C_fileIO101.Files;
+
 class OptionHandler
 {
     public void Handler(int option)
@@ -15,6 +17,10 @@ class OptionHandler
                 break;
             case (int)Options.DELETE:
                 Console.WriteLine($"you want to {Options.DELETE} a file");
+                break;
+            case (int)Options.CREATEFOLDER:
+                Console.WriteLine($"you want to {Options.CREATEFOLDER} a file");
+                new WhichOS().RootFolder();
                 break;
 
             default:
