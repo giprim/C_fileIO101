@@ -1,5 +1,6 @@
 using System;
 using C_fileIO101.Files;
+using C_fileIO101.Files.MenuItems;
 
 class OptionHandler
 {
@@ -21,17 +22,18 @@ class OptionHandler
                 break;
 
             case (int)Options.CREATEFOLDER:
-                Console.WriteLine($"Create a folder");
+                Console.WriteLine($"Creating a folder");
                 new WhichOS().RootFolder();
                 break;
 
             case (int)Options.CREATEFILE:
-                Console.WriteLine($"Create a file");
+
+                new CreateFile().createFile();
                 break;
 
             case (int)Options.LIST:
-                Console.WriteLine("List Files");
-                new ListFolderContent().listFolders();
+                Console.WriteLine("Listing Files");
+                new ListFolderContent().displayFolderList();
                 break;
 
             default:

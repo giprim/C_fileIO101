@@ -7,11 +7,14 @@ namespace C_fileIO101.Files
     public class ListFolderContent
     {
         public ArrayList directoryList = new ArrayList();
-        public void listFolders(string aPath = "")
+        public void GetList(string aPath = "")
         {
             string rootPath = new RootFolder().rootFolder();
             string[] folders = Directory.GetDirectories(rootPath + aPath);
             string[] files = Directory.GetFiles(rootPath);
+
+            // Clear directoryList First
+            directoryList.Clear();
 
             // Folders
             for (int i = 0; i < folders.Length; i++)
@@ -26,6 +29,12 @@ namespace C_fileIO101.Files
                 directoryList.Add(files[j]);
             }
 
+        }
+
+
+        public void displayFolderList()
+        {
+            GetList();
             // listAll
             if (directoryList.Count != -1)
             {
@@ -42,8 +51,7 @@ namespace C_fileIO101.Files
                 }
             }
 
-
-
+            new DisplayOptions().displayOptions();
         }
     }
 }
