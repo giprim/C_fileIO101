@@ -5,5 +5,6 @@ enum Options
     READ,
     WRITE,
     DELETE,
-    LIST
+    LIST,
+    EXIT
 }

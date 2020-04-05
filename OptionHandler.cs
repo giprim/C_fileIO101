@@ -36,6 +36,10 @@ class OptionHandler
                 new ListFolderContent().displayFolderList();
                 break;
 
+            case (int)Options.EXIT:
+                Environment.Exit(1);
+                break;
+
             default:
                 new DisplayOptions().displayOptions();
                 break;
